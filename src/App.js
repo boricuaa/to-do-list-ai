@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
-
+import SignUp from "./components/auth/SignUp";
 import "bootstrap/dist/css/bootstrap.min.css";
 import uuid from "uuid";
 class App extends Component {
@@ -60,9 +60,11 @@ class App extends Component {
     return (
       <div className="container">
         <div className="row">
+          <SignUp />
           <div className="col-10 mx-auto col-md-8 mt-4">
-            <h3 className="text-capitalize text-center">Hello Su!!!!</h3>
-            <TodoInput
+            {/* <h3 className="text-capitalize text-center">Hello Su!!!!</h3> */}
+
+            {/* <TodoInput
               item={this.state.item}
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
@@ -73,7 +75,7 @@ class App extends Component {
               clearList={this.clearList}
               handleDelete={this.handleDelete}
               handleEdit={this.handleEdit}
-            />
+            /> */}
           </div>
         </div>
       </div>
